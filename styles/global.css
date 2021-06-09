@@ -211,7 +211,7 @@ a:hover {
   column-gap: 1.5rem;
 }
 
-.item1, .item2 {
+.item1 {
   z-index: 5;
   min-width: 200px;
   width: 220px;
@@ -219,17 +219,27 @@ a:hover {
   padding: 4px;
   background: rgb(23, 23, 39, .5);
   border-radius: 10px;
-}
 
-.item1 {
   grid-area: item1;
 }
 
 .item2 {
+  z-index: 5;
+  min-width: 200px;
+  width: 220px;
+  min-height: 250px;
+  padding: 4px;
+  background: rgb(23, 23, 39, .5);
+  border-radius: 10px;
   grid-area: item2;
 }
 
-.item1 .item2, img {
+.item1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item2 img {
   width: 100%;
   border-radius: 10px;
 }
@@ -238,14 +248,28 @@ a:hover {
   margin: 4px 8px;
 }
 
-.item1 .item2, h2 {
+.item1 h2 {
   font-family: 'Open Sans';
   font-size: 1rem;
   color: #FFF;
   /* margin-top: 4px; */
 }
 
-.item1 .item2, p {
+.item2 h2 {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  color: #FFF;
+  /* margin-top: 4px; */
+}
+
+.item1 p {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  color: #777;
+  margin: 4px 0px 8px 0px;
+}
+
+.item2 p {
   font-family: 'Open Sans';
   font-size: 1rem;
   color: #777;
