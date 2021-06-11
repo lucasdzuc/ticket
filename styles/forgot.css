@@ -37,7 +37,7 @@ body {
   margin: 0 auto;
   padding: 16px 0px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -45,12 +45,17 @@ body {
   font-family: 'Open Sans';
   font-size: 1rem;
   color: #777;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-.position-options .color-red {
+.position-options a:hover {
+  text-decoration: underline;
+  filter: none;
+}
+
+.position-options .color-gray {
   font-family: 'Open Sans';
   font-size: 1rem;
-  color: #ff0019;
+  color: #777;
   font-weight: 600;
 }
