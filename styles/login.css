@@ -20,10 +20,6 @@ body {
   align-items: center;
 }
 
-.container-login .title-form img {
-  width: 64px;
-}
-
 .container-login .title-form h2 {
   font-family: 'Open Sans';
   font-size: 1.5rem;
