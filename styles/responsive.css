@@ -236,7 +236,7 @@
   display: grid;
   width: 100%;
   max-width: 1120px;
-  /* margin: 70px 0px; */
+  margin: 40px 0px 70px 0px;
   padding: unset;
   justify-content: center;
   /* align-items: center; */

@@ -173,7 +173,7 @@ input {
   display: grid;
   width: 100%;
   max-width: 1120px;
-  /* margin: 70px 0px; */
+  margin: 70px 0px;
   padding: unset;
   flex-direction: row;
   /* justify-content: space-between; */
