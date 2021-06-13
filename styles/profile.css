@@ -1,0 +1,111 @@
+body {
+  background-image: none;
+}
+
+h1 {
+  color: #FFF;
+}
+
+#profile-header {
+  display: flex;
+  max-width: 1120px;
+  height: 88px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-header {
+  display: flex;
+  width: 1120px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#profile-header h3 {
+  color: #FFF;
+}
+
+#profile-header .signout-btn {
+  cursor: pointer;
+  width: 72px;
+  height: 32px;
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  color: #FFF;
+  margin: 0px 1rem;
+  background: red;
+  border-radius: 4px;
+}
+
+#profile-header .signout-btn:hover {
+  filter: brightness(.85);
+}
+
+.container-profile {
+  display: flex;
+  width: 100%;
+  padding: unset;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  justify-content: center;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.content ul li {
+  display: flex;
+  color: #FFF;
+  padding: 16px 24px;
+  /* background: #67676b; */
+  background: #272735;
+  border-radius: 10px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content ul li + li {
+  margin-top: 8px;
+}
+
+.content ul li h4 {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.content ul li a {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  color: #ff0019;
+  font-weight: 400;
+}
+
+.content ul li .expires {
+  color: orange;
+}
+
+.content ul li button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.content ul li button:hover {
+  filter: brightness(.6);
+}
+
+.content ul li button img {
+  width: 20px;
+  height: 20px;
+}
+

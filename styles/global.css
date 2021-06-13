@@ -611,7 +611,14 @@ form input + input {
 }
 
 form input:focus {
-  border: 2px solid #ff0019;
+  /* border: 2px solid #ff0019; */
+  border: 2px solid #0059ff;
+  border-radius: 10px;
+  background: #14142b;
+}
+
+.isError {
+  border: 2px solid #ff6f00;
   border-radius: 10px;
   background: #14142b;
 }
