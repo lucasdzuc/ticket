@@ -279,7 +279,7 @@
   line-height: 20px;
 }
 
-.cardItem a {
+.cardItem .button-cards {
   display: flex;
   width: 100%;
   height: 56px;
@@ -287,7 +287,7 @@
   font-size: 1.125rem;
   font-weight: 600;
   margin-top: 24px;
-  /* background: var(--primary-color); */
+  background: #ff0019;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
