@@ -16,11 +16,15 @@
     <div class="title-form">
       <h2>Cadastro</h2>
     </div>
-    <form action="register" autocomplete="off">
+    <form id="register" name="register" autocomplete="off">
       <input type="text" id="name" name="name" placeholder="Nome" required />
-      <input type="text" id="email" name="email" placeholder="E-mail" required />
-      <input type="password" id="password" name="password" placeholder="Senha" />
-      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" />
+      
+      <input type="email" id="email" name="email" placeholder="E-mail" required />
+
+      <input type="password" id="password" name="password" placeholder="Senha" required />
+
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme sua senha" required />
+      
       <button type="submit">Cadastrar</button>
     </form>
 
@@ -31,5 +35,8 @@
     </div>
   </section>
   
+  <script src="../../js/signup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+
 </body>
 </html>

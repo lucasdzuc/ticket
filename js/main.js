@@ -1,6 +1,6 @@
-const signed = false;
+let signed = false;
 
-const existUser = localStorage.getItem("Acesso");
+let existUser = localStorage.getItem("@Ticket");
 
 if(existUser){
   signed = true;

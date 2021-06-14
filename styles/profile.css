@@ -18,15 +18,27 @@ h1 {
 #container-header {
   display: flex;
   width: 1120px;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-#profile-header h3 {
+.goback a {
+  color: #FFF;
+  padding: 0px 16px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user h3 {
   color: #FFF;
 }
 
-#profile-header .signout-btn {
+.user .signout-btn {
   cursor: pointer;
   width: 72px;
   height: 32px;
@@ -43,6 +55,8 @@ h1 {
   filter: brightness(.85);
 }
 
+
+
 .container-profile {
   display: flex;
   width: 100%;
@@ -52,9 +66,13 @@ h1 {
 }
 
 .content {
-  max-width: 800px;
+  max-width: 980px;
   width: 100%;
   justify-content: center;
+}
+
+.content h1 {
+  margin: 16px 0px;
 }
 
 .content ul {
@@ -76,6 +94,8 @@ h1 {
 .content ul li + li {
   margin-top: 8px;
 }
+
+
 
 .content ul li h4 {
   font-family: 'Open Sans';

@@ -1,3 +1,15 @@
+:root {
+  --primary-color: #ff0019;
+  --bg-color: #06061c;
+  --bg-card-color: #212134;
+  --text-color: #777;
+  --title-color: #FFF;
+  --text-secundary: #8A8A8A;
+  --link-color: #FFF;
+  --button-color: #ff0019;
+}
+
+
 * { 
   margin: 0; 
   padding: 0;
@@ -8,7 +20,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: sans-serif;
-  background: #06061c;
+  background: var(--bg-color);
   background-image: url("../assets/bg01.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -17,7 +29,7 @@ body {
 }
 
 a {
-  color: #fff; 
+  color: var(--link-color); 
   text-decoration: none; 
   transition: 0.3s;
 }
@@ -91,7 +103,7 @@ input {
 }
 
 #header #header-container #nav #menu .login:hover {
-  filter: brightness(.7);
+  filter: brightness(.6);
 }
 
 .card1 {
