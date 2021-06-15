@@ -3,37 +3,56 @@ const form = document.forms.singnin;
 form.addEventListener('submit', event => {
   event.preventDefault();
 
+  let user;
+  let data;
+
   const { email, password } = form;
-  console.log(email.value, password.value);
+  // console.log(email.value, password.value);
 
-  const User = { email: email.value, password: password.value };
+  // const User = { email: email.value, password: password.value };
 
-  if(!email.value) {
-    const email = document.getElementById('email');
-    email.classList.toggle('isError');
-    const isError = email.classList.contains('isError');
-    event.currentTarget.setAttribute('aria-expanded', isError);
-  } else {
-    event.currentTarget.removeAttribute("class");
-  }
+  // if(!email.value) {
+  //   const email = document.getElementById('email');
+  //   email.classList.toggle('isError');
+  //   const isError = email.classList.contains('isError');
+  //   event.currentTarget.setAttribute('aria-expanded', isError);
+  // } else {
+  //   event.currentTarget.removeAttribute("class");
+  // }
 
-  if(!password.value) {
-    const password = document.getElementById('password');
-    password.classList.toggle('isError');
-    const isError = password.classList.contains('isError');
-    event.currentTarget.setAttribute('aria-expanded', isError);
-  } else {
-    event.currentTarget.removeAttribute("class");
-  }
+  // if(!password.value) {
+  //   const password = document.getElementById('password');
+  //   password.classList.toggle('isError');
+  //   const isError = password.classList.contains('isError');
+  //   event.currentTarget.setAttribute('aria-expanded', isError);
+  // } else {
+  //   event.currentTarget.removeAttribute("class");
+  // }
+
+  // VALIDANDO FORMULÁRIO
+
 
   // BUSCAR USUÁRIOS DO LOCAL STORAGE
 
-  // const users = localStorage.getItem("@TicketRegister");
+  const users = localStorage.getItem("@TicketRegister");
+  const getUser = JSON.parse(users);
 
-  if(email.value == "lucas@admin.com" && password.value == "123"){
-    localStorage.setItem("@Ticket", JSON.stringify(User));
+  if(!getUser){
+    return console.log("Não existe usuários na base de dados!");
+  }
 
+  for(user of getUser){
+    // console.log(user.email);  
+    if(user.email === email.value) data = user;  
+  }
+
+  if(data.password === password.value){
+    // console.log("Logado!");
+    user = { id: user.id, name: user.name, email: user.email }
+    localStorage.setItem("@Ticket", JSON.stringify(user));
     window.location.href = "../profile/index.html";
+  } else {
+    return console.log("E-mail ou senha inválido!");
   }
 
 });
