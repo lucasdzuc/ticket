@@ -38,21 +38,27 @@ form.addEventListener('submit', event => {
   const getUser = JSON.parse(users);
 
   if(!getUser){
-    return console.log("Não existe usuários na base de dados!");
+    console.log("Não existe usuários na base de dados!");
   }
 
   for(user of getUser){
     // console.log(user.email);  
-    if(user.email === email.value) data = user;  
+    if(user.email === email.value) data = user;
+
+    if(!user.email === email.value) data = null;
+  }
+
+  if(data == null){
+    alert("Endereço de e-mail ou senha inválido!");
   }
 
   if(data.password === password.value){
     // console.log("Logado!");
-    user = { id: user.id, name: user.name, email: user.email }
+    user = { id: data.id, name: data.name, email: data.email }
     localStorage.setItem("@Ticket", JSON.stringify(user));
     window.location.href = "../profile/index.html";
   } else {
-    return console.log("E-mail ou senha inválido!");
+    alert("E-mail ou senha inválido!");
   }
 
 });
