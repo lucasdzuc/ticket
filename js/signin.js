@@ -26,7 +26,7 @@ form.addEventListener('submit', event => {
     event.currentTarget.removeAttribute("class");
   }
 
-  // BUSCAR USUÁRIS DO LOCAL STORAGE
+  // BUSCAR USUÁRIOS DO LOCAL STORAGE
 
   // const users = localStorage.getItem("@TicketRegister");
 
