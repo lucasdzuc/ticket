@@ -37,7 +37,7 @@ form.addEventListener('submit', event => {
   const users = localStorage.getItem("@TicketRegister");
   const getUser = JSON.parse(users);
 
-  if(!getUser){
+  if(!users){
     console.log("Não existe usuários na base de dados!");
   }
 
