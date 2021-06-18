@@ -265,7 +265,7 @@ input {
   margin: 70px 0px;
   padding: unset;
   /* flex-direction: column; */
-  /* justify-content: space-between; */
+  justify-content: center;
   /* align-items: flex-start; */
 }
 
