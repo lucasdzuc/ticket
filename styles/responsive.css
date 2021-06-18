@@ -397,7 +397,7 @@
 .plataforma-film {
   display: flex;
   width: 100%;
-  padding: 4px 8px;
+  padding: 0px 0px;
   background-color: #2f2f44;
   border-radius: 5px;
   justify-content: center;
@@ -405,7 +405,7 @@
 }
 
 .plataform-image {
-  width: 100%;
+  width: 60%;
 }
 
   /* CARD 2 */

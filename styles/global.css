@@ -346,7 +346,7 @@ input {
 .plataforma-film {
   display: flex;
   width: 100%;
-  padding: 4px 0px;
+  padding: 0px 0px;
   background-color: #2f2f44;
   border-radius: 5px;
   justify-content: center;
@@ -354,8 +354,8 @@ input {
 }
 
 .plataform-image {
-  width: 120px;
-  height: 36px;
+  width: 60%;
+  /* height: 36px; */
 }
 
 .rate {
