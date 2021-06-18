@@ -371,10 +371,41 @@ input {
   padding: 0px 8px;
 }
 
+.link-film {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  padding: 0px 10px 0px 16px;
+  border: 1px solid #FFF;
+  /* background-color: #2f2f44; */
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-button-film {
+  font-size: 24px;
+  color: #FFF;
+}
+
+.link-film i {
+  font-size: 18px;
+  /* margin: 0px 12px; */
+}
+
+.link-film:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--title-color);
+  background-color: #FFF;
+}
+
 .plataforma-film {
   display: flex;
   width: 100%;
+  height: 48px;
   padding: 0px 0px;
+  border: 1px solid #FFF;
   background-color: #2f2f44;
   border-radius: 5px;
   justify-content: center;
