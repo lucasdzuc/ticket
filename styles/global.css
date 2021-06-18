@@ -310,6 +310,12 @@ input {
   grid-row: 1/2;
 }
 
+.space-film {
+  width: 0px;
+  grid-column: 11/12;
+  grid-row: 1/2;
+}
+
 .film {
   max-width: 220px;
   /* min-width: 200px; */
@@ -343,6 +349,28 @@ input {
   margin: 4px 0px 4px 0px;
 }
 
+.rate-film {
+  display: flex;
+  margin: 0px 0px 8px 0px;
+  align-items: center;
+}
+
+.rate-film img {
+  width: 16px;
+  height: 16px;
+}
+
+.rate-film img + img {
+  margin-left: 2px;
+}
+
+.rate-film h4 {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  color: #777;
+  padding: 0px 8px;
+}
+
 .plataforma-film {
   display: flex;
   width: 100%;
@@ -358,27 +386,6 @@ input {
   /* height: 36px; */
 }
 
-.rate {
-  display: flex;
-  margin: 0px 0px 8px 0px;
-  align-items: center;
-}
-
-.rate img {
-  width: 16px;
-  height: 16px;
-}
-
-.rate img + img {
-  margin-left: 2px;
-}
-
-.rate h4 {
-  font-family: 'Open Sans';
-  font-size: 15px;
-  color: #777;
-  padding: 0px 8px;
-}
 
 /*
   CARD 2
@@ -496,9 +503,9 @@ input {
   align-items: center;
 }
 
-.plataforma .plataform-image {
-  width: 120px;
-  height: 36px;
+.plataform-image {
+  width: 70%;
+  height: 40px;
 }
 
 .rate {
