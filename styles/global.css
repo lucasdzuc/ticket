@@ -321,7 +321,7 @@ input {
   border-radius: 10px;
 }
 
-.film img {
+.film .image-film {
   width: 100%;
   border-radius: 10px;
 }
@@ -334,7 +334,6 @@ input {
   font-family: 'Open Sans';
   font-size: 1rem;
   color: #FFF;
-  /* margin-top: 4px; */
 }
 
 .contents-film p {
@@ -354,7 +353,7 @@ input {
   align-items: center;
 }
 
-.plataforma .plataform-image {
+.plataform-image {
   width: 120px;
   height: 36px;
 }

@@ -372,7 +372,7 @@
   border-radius: 10px;
 }
 
-.film img {
+.film .image-film {
   width: 100%;
   border-radius: 10px;
 }
@@ -385,7 +385,6 @@
   font-family: 'Open Sans';
   font-size: 1rem;
   color: #FFF;
-  /* margin-top: 4px; */
 }
 
 .contents-film p {
@@ -398,16 +397,15 @@
 .plataforma-film {
   display: flex;
   width: 100%;
-  padding: 4px 4px;
+  padding: 4px 8px;
   background-color: #2f2f44;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
 }
 
-.plataforma .plataform-image {
-  width: 90%;
-  height: 24px;
+.plataform-image {
+  width: 100%;
 }
 
   /* CARD 2 */
