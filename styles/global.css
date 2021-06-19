@@ -9,7 +9,6 @@
   --button-color: #ff0019;
 }
 
-
 * { 
   margin: 0; 
   padding: 0;
@@ -40,6 +39,28 @@ a:hover {
 
 input {
   outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212134; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #212134;
 }
 
 #header {
@@ -288,6 +309,7 @@ input {
   column-gap: .5rem;
   /* row-gap: 1rem; */
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 .film1 {
@@ -312,7 +334,7 @@ input {
 }
 
 .space-film {
-  width: 0px;
+  width: 10px;
   grid-column: 11/12;
   grid-row: 1/2;
 }
