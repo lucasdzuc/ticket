@@ -201,12 +201,17 @@
   }
 
   .button-area {
+    display: flex;
     margin-top: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 16px;
   }
 
   .button-access {
     cursor: pointer;
-    width: 128px;
+    width: 136px;
     height: 48px;
     color: #FFF;
     font-size: 1rem;
@@ -219,9 +224,31 @@
     filter: brightness(.7);
   }
 
+  .button-more {
+    display: flex;
+    cursor: pointer;
+    width: 136px;
+    height: 48px;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background: none;
+    transition: .3s;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-more:hover {
+    color: var(--primary-color);
+    border: 1px solid #FFF;
+    background-color: #FFF;
+  }
+
   /*
-  CARDS
-*/
+    CARDS
+  */
 
 .cards {
   display: flex;

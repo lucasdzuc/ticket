@@ -169,10 +169,16 @@ input {
 }
 
 .button-area {
+  display: flex;
   margin-top: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
 }
 
 .button-access {
+  display: flex;
   cursor: pointer;
   width: 150px;
   height: 48px;
@@ -183,10 +189,34 @@ input {
   border-radius: 5px;
   background: #ff0019;
   transition: .3s;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-access:hover {
-  filter: brightness(.95);
+  filter: brightness(.9);
+}
+
+.button-more {
+  display: flex;
+  cursor: pointer;
+  width: 150px;
+  height: 48px;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  background: none;
+  transition: .3s;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-more:hover {
+  color: var(--primary-color);
+  border: 1px solid #FFF;
+  background-color: #FFF;
 }
 
 /*
