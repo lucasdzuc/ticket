@@ -86,7 +86,7 @@ h1 {
   /* background: #67676b; */
   background: #272735;
   border-radius: 10px;
-
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -94,8 +94,6 @@ h1 {
 .content ul li + li {
   margin-top: 8px;
 }
-
-
 
 .content ul li h4 {
   font-family: 'Open Sans';
@@ -114,18 +112,110 @@ h1 {
   color: orange;
 }
 
-.content ul li button {
+.content ul li .copy-button {
   cursor: pointer;
   border: none;
   background: none;
 }
 
-.content ul li button:hover {
-  filter: brightness(.6);
+.content ul li .copy-button i {
+  font-size: 1.125rem;
+  color: #FFF;
 }
 
-.content ul li button img {
-  width: 20px;
-  height: 20px;
+.content ul li .copy-button:hover {
+  filter: brightness(.7);
 }
 
+/*
+  STYLE RESPONSIVE
+*/
+
+@media (max-width: 768px) {
+  .container-profile {
+    display: flex;
+    width: 100%;
+    padding: unset;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    max-width: 400px;
+    width: 100%;
+    /* justify-content: center; */
+  }
+  
+  .content h1 {
+    margin: 16px 0px;
+  }
+
+  .content ul li {
+    display: grid;
+    width: 100%;
+    padding: 16px 24px;
+    /* background: #67676b; */
+    background: #272735;
+    border-radius: 10px;
+    column-gap: 2px;
+    row-gap: 4px;
+  }
+
+  .content ul li h4 {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 400;
+    /* background-color: lightgreen; */
+    grid-column: 1/2;
+  }
+  
+  .content ul li a {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    color: #ff0019;
+    font-weight: 400;
+    /* background-color: lightpink; */
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+
+  .content ul li .received {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    text-align: right;
+    font-weight: 400;
+    /* background-color: lightsalmon; */
+    grid-column: 3/4;
+    /* grid-row: 1/2; */
+  }
+  
+  .content ul li .expires {
+    font-family: 'Open Sans';
+    color: orange;
+    text-align: right;
+    font-weight: 400;
+    /* background-color: lightseagreen; */
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  
+  .content ul li .copy-button {
+    cursor: pointer;
+    text-align: right;
+    border: none;
+    background: none;
+    /* background-color: lightyellow; */
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+  
+  .content ul li .copy-button:hover {
+    filter: brightness(.6);
+  }
+  
+  .content ul li .copy-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
