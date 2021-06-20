@@ -211,7 +211,7 @@
 
   .button-access {
     cursor: pointer;
-    width: 136px;
+    width: 200px;
     height: 48px;
     color: #FFF;
     font-size: 1rem;
@@ -227,7 +227,7 @@
   .button-more {
     display: flex;
     cursor: pointer;
-    width: 136px;
+    width: 200px;
     height: 48px;
     font-family: 'Open Sans';
     font-size: 1rem;
