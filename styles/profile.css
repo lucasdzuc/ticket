@@ -34,7 +34,7 @@ h1 {
   align-items: center;
 }
 
-.user h3 {
+.user .username {
   color: #FFF;
 }
 

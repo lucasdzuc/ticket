@@ -12,3 +12,23 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+// VERIFY USER SIGNED
+
+let existUser = localStorage.getItem("@Ticket");
+
+if (existUser) {
+  const user = JSON.parse(existUser);
+
+  if (!user.name) {
+    user.name = 'Perfil';
+  }
+
+  const classUser = document.querySelector('.login');
+
+  classUser.style.background = "#FFF";
+  classUser.style.color = "#ff0019"
+  classUser.href = "./pages/profile/index.html";
+  classUser.innerText = user.name
+
+}
