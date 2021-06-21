@@ -244,6 +244,7 @@
     color: var(--primary-color);
     border: 1px solid #FFF;
     background-color: #FFF;
+    filter: none;
   }
 
   /*
