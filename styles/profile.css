@@ -39,9 +39,11 @@ h1 {
 }
 
 .user .signout-btn {
+  display: flex;
   cursor: pointer;
-  width: 72px;
-  height: 32px;
+  /* width: 72px; */
+  /* height: 32px; */
+  padding: 2px 16px;
   border: none;
   font-family: 'Open Sans';
   font-size: 1rem;
@@ -49,9 +51,15 @@ h1 {
   margin: 0px 1rem;
   background: red;
   border-radius: 4px;
+  align-items: center;
 }
 
-#profile-header .signout-btn:hover {
+.user .signout-btn i {
+  font-size: 24px;
+  padding-left: 8px;
+}
+
+.user .signout-btn:hover {
   filter: brightness(.85);
 }
 

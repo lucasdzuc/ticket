@@ -21,6 +21,6 @@ if (existUser) {
 
   const userName = document.querySelector('.username');
 
-  userName.innerText = user.name;
+  userName.innerText = !user ? '' : user.name;
 
 }
