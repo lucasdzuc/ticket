@@ -91,7 +91,6 @@ h1 {
 
 .content ul li {
   display: flex;
-  color: #FFF;
   padding: 16px 24px;
   /* background: #67676b; */
   background: #272735;
@@ -107,6 +106,7 @@ h1 {
 
 .content ul li h4 {
   font-family: 'Open Sans';
+  color: #FFF;
   font-size: 1rem;
   font-weight: 400;
 }
